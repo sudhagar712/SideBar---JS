@@ -1,0 +1,44 @@
+.container{
+    display:flex;
+}
+
+.sidebar{
+    width:600px;
+    height: 100vh;
+    background-color: rgb(14, 4, 4);
+    color: azure;
+    padding-top: 20px;
+    text-align: center;
+    transition: all .5s ease-in-out ;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li{
+    padding: 20px;
+}
+
+.sidebar li a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+
+.content{
+    padding: 45px;
+    flex-grow:1;
+}
+
+
+.container.sidebar-open .sidebar {
+    width: 0;
+    padding:0;
+    overflow:hidden;
+}
